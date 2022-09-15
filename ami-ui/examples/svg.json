@@ -1,0 +1,226 @@
+[{
+  "id": "3271692",
+  "name": "采集2.0(svg文件)",
+  "font_family": "iconfont",
+  "css_prefix_text": "ami-icon-svg-",
+  "description": "文件类图标",
+  "glyphs": [
+    {
+      "icon_id": "30357949",
+      "name": "apk-icon",
+      "font_class": "apk-icon",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "30357950",
+      "name": "cvs-icon",
+      "font_class": "cvs-icon",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "30357951",
+      "name": "excel-icon",
+      "font_class": "excel-icon",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "30357952",
+      "name": "json-icon",
+      "font_class": "json-icon",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "30357953",
+      "name": "js-icon",
+      "font_class": "js-icon",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "30357954",
+      "name": "mp4-icon",
+      "font_class": "mp4-icon",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "30357955",
+      "name": "mp3-icon",
+      "font_class": "mp3-icon",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "30357956",
+      "name": "ppt-icon",
+      "font_class": "ppt-icon",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "30357957",
+      "name": "pdf-icon",
+      "font_class": "pdf-icon",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "30357959",
+      "name": "tupian-ico",
+      "font_class": "tupian-ico",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "30357960",
+      "name": "yasuobao-icon",
+      "font_class": "yasuobao-icon",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "30357961",
+      "name": "word-icon",
+      "font_class": "word-icon",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "30357962",
+      "name": "wenben-icon",
+      "font_class": "wenben-icon",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "28932651",
+      "name": "shangchuan",
+      "font_class": "shangchuan",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "28932652",
+      "name": "excel",
+      "font_class": "excel",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "28932653",
+      "name": "zip",
+      "font_class": "zip",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "28932654",
+      "name": "pdf",
+      "font_class": "pdf",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "28928192",
+      "name": "word",
+      "font_class": "word",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "19649329",
+      "name": "MP4",
+      "font_class": "mp4",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "19649330",
+      "name": "rar",
+      "font_class": "rar",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "19649331",
+      "name": "json",
+      "font_class": "json",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "19649333",
+      "name": "SVG",
+      "font_class": "svg",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "23196750",
+      "name": "JPG",
+      "font_class": "PNG",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    },
+    {
+      "icon_id": "19649323",
+      "name": "csv",
+      "font_class": "csv",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "19649324",
+      "name": "ppt",
+      "font_class": "ppt",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "19649325",
+      "name": "WebPage",
+      "font_class": "web-page",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "19649327",
+      "name": "txt",
+      "font_class": "txt",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "19649315",
+      "name": "文件夹",
+      "font_class": "file",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "19649317",
+      "name": "apk",
+      "font_class": "apk",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "19649318",
+      "name": "exe",
+      "font_class": "exe",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "23016929",
+      "name": "MP3",
+      "font_class": "mp3",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}]

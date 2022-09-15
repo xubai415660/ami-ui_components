@@ -1,0 +1,168 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+@import "common/var";
+
+@include b(form) {
+  @include m(label-left) {
+    & .ami-form-item__label {
+      text-align: left;
+    }
+  }
+  @include m(label-top) {
+    & .ami-form-item__label {
+      float: none;
+      display: inline-block;
+      text-align: left;
+      padding: 0 0 10px 0;
+    }
+  }
+  @include m(inline) {
+    & .ami-form-item {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+    & .ami-form-item__label {
+      float: none;
+      display: inline-block;
+    }
+    & .ami-form-item__content {
+      display: inline-block;
+      vertical-align: top;
+    }
+    &.ami-form--label-top .ami-form-item__content {
+      display: block;
+    }
+  }
+}
+@include b(form-item) {
+  margin-bottom: 20px;
+  @include utils-clearfix;
+
+  & .ami-form-item {
+    margin-bottom: 0;
+  }
+
+  & .ami-input__validateIcon {
+    display: none;
+  }
+
+  @include m(medium) {
+    .ami-form-item__label {
+      line-height: 36px;
+    }
+    .ami-form-item__content {
+      line-height: 36px;
+    }
+  }
+  @include m(small) {
+    .ami-form-item__label {
+      line-height: 32px;
+    }
+    .ami-form-item__content {
+      line-height: 32px;
+    }
+    &.ami-form-item {
+      margin-bottom: 18px;
+    }
+    .ami-form-item__error {
+   //   padding-top: 2px;
+    }
+  }
+  @include m(mini) {
+    .ami-form-item__label {
+      line-height: 28px;
+    }
+    .ami-form-item__content {
+      line-height: 28px;
+    }
+    &.ami-form-item {
+      margin-bottom: 18px;
+    }
+    .ami-form-item__error {
+    //  padding-top: 1px;
+    }
+  }
+
+  @include e(label-wrap) {
+    float: left;
+    .ami-form-item__label {
+      display: inline-block;
+      float: none;
+    }
+  }
+
+  @include e(label) {
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: $--form-label-font-size;
+    color: $--color-text-regular;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+  }
+  @include e(content) {
+    line-height: 40px;
+    position: relative;
+    font-size: 14px;
+    @include utils-clearfix;
+
+    .ami-input-group {
+      vertical-align: top;
+    }
+  }
+  @include e(error) {
+    color: $--color-danger;
+    font-size: 12px;
+    line-height: 1;
+  //  padding-top: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    @include m(inline) {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  @include when(required) {
+    @include pseudo('not(.is-no-asterisk)') {
+      & > .ami-form-item__label:before,
+      & .ami-form-item__label-wrap > .ami-form-item__label:before {
+        content: '*';
+        color: $--color-danger;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  @include when(error) {
+    & .ami-input__inner,
+    & .ami-textarea__inner {
+      &, &:focus {
+        border-color: $--color-danger;
+        color: $--color-danger;
+      }
+    }
+    & .ami-input-group__append,
+    & .ami-input-group__prepend {
+      & .ami-input__inner {
+        border-color: transparent;
+      }
+    }
+    .ami-input__validateIcon {
+      color: $--color-danger;
+    }
+  }
+
+  @include m(feedback) {
+    .ami-input__validateIcon {
+      display: inline-block;
+    }
+  }
+}

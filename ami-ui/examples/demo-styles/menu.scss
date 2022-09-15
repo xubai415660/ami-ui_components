@@ -1,0 +1,29 @@
+.demo-block.demo-menu {
+  .ami-menu-demo {
+    padding-left: 55px;
+  }
+
+  .ami-menu-vertical-demo:not(.ami-menu--collapse) {
+    width: 240px;
+    min-height: 400px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #e0e6ed;
+    margin: 35px -24px;
+  }
+  h5 {
+    font-size: 14px;
+    color: #8492a6;
+    margin-top: 10px;
+  }
+  .tac {
+    text-align: center;
+
+    .ami-menu-vertical-demo {
+      display: inline-block;
+      text-align: left;
+    }
+  }
+}

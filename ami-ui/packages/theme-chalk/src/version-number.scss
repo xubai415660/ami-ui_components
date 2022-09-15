@@ -1,0 +1,26 @@
+@import "mixins/mixins";
+@import "common/var";
+@include b(version-number) {
+  width: 100%;
+  display: flex;
+  align-items:center;
+  background-color: #ffffff;
+  .separator {
+    padding: 0 10px;
+  }
+  .prefix{
+    display:flex ;
+    align-items: center;
+  }
+  .icon {
+    box-sizing: content-box;
+    padding: 0 12px;
+    visibility: hidden;
+    color: $--color-text-regular;
+  }
+ &:hover .icon {
+    visibility: visible;
+    cursor: pointer;
+   color: $--color-text-regular;
+  }
+}

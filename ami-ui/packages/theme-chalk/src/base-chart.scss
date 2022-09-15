@@ -1,0 +1,6 @@
+@import "mixins/mixins";
+@import "common/var";
+@include b(base-chart) {
+  width: 100%;
+  height: 100%;
+}

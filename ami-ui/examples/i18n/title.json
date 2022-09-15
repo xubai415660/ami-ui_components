@@ -1,0 +1,26 @@
+{
+  "zh-CN": {
+    "home": "Ami - 网站快速成型工具",
+    "guide": "指南 | Ami",
+    "component": "组件 | Ami",
+    "resource": "资源 | Ami"
+  },
+  "en-US": {
+    "home": "Ami - A Desktop UI Toolkit for Web",
+    "guide": "Guide | Ami",
+    "component": "Component | Ami",
+    "resource": "Resource | Ami"
+  },
+  "es": {
+    "home": "Ami - Un kit de interfaz de usuario para la web",
+    "guide": "Guía | Element",
+    "component": "Componentes | Ami",
+    "resource": "Recursos | Ami"
+  },
+  "fr-FR": {
+    "home": "Ami - Un kit de composants d'interface pour le web",
+    "guide": "Guide | Ami",
+    "component": "Composants | Ami",
+    "resource": "Ressources | Ami"
+  }
+}

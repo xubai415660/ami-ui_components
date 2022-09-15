@@ -1,0 +1,70 @@
+/*********************************************************************************
+ @description：draggable.scss文件样式
+ @author：张时友
+ @date：Created in 2022/3/29 20:00
+ @modified By：
+ @version: 1.0.0
+***********************************************************************************/
+.board-column{
+  width: 360px;
+  background-color: #eeeeee;
+  padding-bottom: 10px;
+}
+.board-column-header{
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-column-content{
+  margin: 10px;
+}
+.board-item {
+  cursor: pointer;
+  height: 64px;
+  margin: 5px 0;
+  background-color: #fff;
+  text-align: left;
+  line-height: 54px;
+padding:0 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.ghostClass {
+  background-color: blue !important;
+}
+
+.chosenClass {
+  background-color: red !important;
+  opacity: 1 !important;
+}
+
+.dragClass {
+  background-color: blueviolet !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-image: none !important;
+}
+
+.todo {
+  .board-column-header {
+    background: #4A9FF9;
+  }
+
+}
+.working {
+
+  .board-column-header {
+    background: #f9944a;
+  }
+
+}
+.done {
+
+  .board-column-header {
+    background: #2ac06d;
+  }
+
+}
+

@@ -1,0 +1,81 @@
+@import "mixins/mixins";
+@import "common/var";
+
+
+
+  .header-table-set {
+    .ami-dialog__body {
+      padding-bottom: 0px;
+    }
+    &-body {
+      display: flex;
+      height: 500px;
+    }
+
+    .set-body {
+      &-title {
+        font-weight: 700;
+        font-size: 14px;
+        height: 18px;
+        line-height: 18px;
+        color: #333333;
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #999999;
+        }
+      }
+
+      &-left {
+        flex: 1;
+      }
+
+      &-right {
+        width: 300px;
+        margin-left: 20px;
+
+        .set-body-box {
+          overflow-y: auto;
+        }
+
+        .set-body-draggable {
+          padding: 6px 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: #666666;
+          display: flex;
+          justify-content: space-between;
+          .zhuangshidian {
+            margin-right: 12px;
+          }
+          .icon {
+            padding-left: 10px;
+            cursor: pointer;
+          }
+        }
+
+        .set-body-draggable:hover {
+          background-color: #f5f5f5;
+          cursor: move;
+        }
+      }
+
+      &-box {
+        height: 430px;
+        margin-top: 20px;
+        padding: 12px;
+        border: 1px solid #dee0e6;
+        border-radius: 8px;
+
+         .ami-checkbox {
+          display: inline-block;
+          padding: 6px 0;
+          width: 140px;
+        }
+      }
+    }
+  }
+

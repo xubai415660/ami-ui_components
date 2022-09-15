@@ -1,0 +1,12 @@
+@import "mixins/mixins";
+@import "common/var";
+@include b(clamp) {
+  .slot-after{
+    display: inline-block;
+  }
+  .autoresize{
+    width: auto;
+    height: auto;
+    //background: pink;
+  }
+}

@@ -1,0 +1,37 @@
+@import "mixins/mixins";
+@import "common/var";
+@include b(input-ip) {
+  width: 100%;
+  display: flex;
+  align-items:center;
+    .ipAdress{
+      display: flex;
+      border-radius: 9px;
+      width: calc(100% - 20px);
+      padding-inline-start: 0px;
+      li{
+        list-style-type: none;
+        width: 25%;
+        display: flex;
+        align-items:center;
+        .ip-box{
+         padding: 0 6px;
+        }
+      }
+      :last-child .ip-box{
+        display: none;
+      }
+    }
+  &:hover .icon {
+    visibility: visible;
+    cursor: pointer;
+    color: $--color-text-regular;
+  }
+   .icon{
+     display: inline-block;
+     box-sizing: content-box;
+     visibility: hidden;
+     padding:0 6px;
+     color: $--color-text-regular;
+   }
+}

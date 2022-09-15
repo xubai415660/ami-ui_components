@@ -1,0 +1,42 @@
+/*********************************************************************************
+ @description：svg-icon.scss文件样式
+ @author：张时友
+ @date：Created in 2022/4/13 11:25
+ @modified By：
+ @version: 1.0.0
+***********************************************************************************/
+.demo-svg-icon .ami-svg-icon{
+  width: 80px;
+  height: 40px;
+}
+.svg-icon-list{
+  display: flex;
+  flex-wrap: wrap;
+  border-left: #eee 1px solid;
+  border-top:#eee 1px solid ;
+}
+.svg-icon-title{
+  margin-top: 30px;
+}
+.icon-list-li{
+  width: 280px;
+  height: 140px;
+  border-right: #eee 1px solid;
+  border-bottom : #eee 1px solid;
+}
+.svg-icon-svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.svg-icon-icon{
+  width: 80px;
+  height: 40px;
+}
+.svg-icon-name{
+  margin-top: 20px;
+  color: #99a9bf;
+  font-size: 13px;
+}

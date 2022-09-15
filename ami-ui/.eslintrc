@@ -1,0 +1,48 @@
+{
+  "globals": {
+    "ga": true,
+    "chrome": true,
+    "tinymce": true
+  },
+  "plugins": ["html", "json"],
+  "extends": "elemefe",
+  "rules": {
+    "no-restricted-globals": ["error", "event", "fdescribe"],
+    "no-restricted-syntax":"off",
+    "one-var":"off",
+    "no-sequences": "off",
+    "eqeqeq": "off",
+    "no-return-assign":"off",
+    "no-undef": "off",
+    "new-cap": "off",
+    "no-cond-assign": "off",
+    "no-sparse-arrays": "off",
+    "no-redeclare": "off",
+    "no-labels": "off",
+    "no-label-var": "off",
+    "no-unused-vars": "off",
+    "no-control-regex": "off",
+    "radix": "off",
+    "no-new": "off",
+    "no-fallthrough": "off",
+    "no-self-compare": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "brace-style": "off",
+    "no-lone-blocks": "off",
+    "no-irregular-whitespace": "off",
+    "no-throw-literal": "off",
+    "semi": "off",
+    "quotes": "off",
+    "space-infix-ops": "off",
+    "curly": "off",
+    "spaced-comment": "off",
+    "space-before-blocks": "off",
+    "keyword-spacing": "off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

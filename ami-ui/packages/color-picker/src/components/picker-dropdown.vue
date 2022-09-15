@@ -1,0 +1,121 @@
+<template>
+  <transition name="ami-zoom-in-top" @after-leave="doDestroy">
+    <div
+        class="ami-color-dropdown"
+        v-show="showPopper">
+      <div class="ami-color-dropdown__main-wrapper">
+        <hue-slider ref="hue" :color="color" vertical style="float: right;"></hue-slider>
+        <sv-panel ref="sl" :color="color"></sv-panel>
+      </div>
+      <alpha-slider v-if="showAlpha" ref="alpha" :color="color"></alpha-slider>
+      <predefine v-if="predefine" :color="color" :colors="predefine"></predefine>
+      <div class="ami-color-dropdown__btns">
+        <span class="ami-color-dropdown__value">
+          <ami-input
+              v-model="customInput"
+              @keyup.native.enter="handleConfirm"
+              @blur="handleConfirm"
+              :validate-event="false"
+              size="mini">
+          </ami-input>
+        </span>
+        <ami-button
+            size="mini"
+            type="text"
+            class="ami-color-dropdown__link-btn"
+            @click="$emit('clear')">
+          {{ t('el.colorpicker.clear') }}
+        </ami-button>
+        <ami-button
+            plain
+            size="mini"
+            class="ami-color-dropdown__btn"
+            @click="confirmValue">
+          {{ t('el.colorpicker.confirm') }}
+        </ami-button>
+      </div>
+    </div>
+  </transition>
+</template>
+
+<script>
+import SvPanel from './sv-panel';
+import HueSlider from './hue-slider';
+import AlphaSlider from './alpha-slider';
+import Predefine from './predefine';
+import Popper from 'ami-ui/src/utils/vue-popper';
+import Locale from 'ami-ui/src/mixins/locale';
+import AmiInput from 'ami-ui/packages/input';
+import AmiButton from 'ami-ui/packages/button';
+
+export default {
+  name: 'ami-color-picker-dropdown',
+
+  mixins: [Popper, Locale],
+
+  components: {
+    SvPanel,
+    HueSlider,
+    AlphaSlider,
+    AmiInput,
+    AmiButton,
+    Predefine
+  },
+
+  props: {
+    color: {
+      required: true
+    },
+    showAlpha: Boolean,
+    predefine: Array
+  },
+
+  data() {
+    return {
+      customInput: ''
+    };
+  },
+
+  computed: {
+    currentColor() {
+      const parent = this.$parent;
+      return !parent.value && !parent.showPanelColor ? '' : parent.color.value;
+    }
+  },
+
+  methods: {
+    confirmValue() {
+      this.$emit('pick');
+    },
+
+    handleConfirm() {
+      this.color.fromString(this.customInput);
+    }
+  },
+
+  mounted() {
+    this.$parent.popperElm = this.popperElm = this.$el;
+    this.referenceElm = this.$parent.$el;
+  },
+
+  watch: {
+    showPopper(val) {
+      if (val === true) {
+        this.$nextTick(() => {
+          const { sl, hue, alpha } = this.$refs;
+          sl && sl.update();
+          hue && hue.update();
+          alpha && alpha.update();
+        });
+      }
+    },
+
+    currentColor: {
+      immediate: true,
+      handler(val) {
+        this.customInput = val;
+      }
+    }
+  }
+};
+</script>

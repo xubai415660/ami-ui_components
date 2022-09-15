@@ -1,0 +1,35 @@
+{
+  "name": "ami-theme-chalk",
+  "version": "0.0.1-beta",
+  "description": "Ami-ui component chalk theme.",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "element",
+    "theme"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-autoprefixer": "^4.0.0"
+  },
+  "dependencies": {}
+}
